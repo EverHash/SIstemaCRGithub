@@ -1,0 +1,2587 @@
+/* PREVIOS */
+/* PREVIOS */
+/* PREVIOS */
+/* PREVIOS */
+
+@font-face {
+    font-family: 'Mulish', sans-serif;
+    src: url("./rsrcs/fuentes/Mulish-Regular.ttf") format('truetype');
+    font-size: 16px;
+}
+
+html {
+    scroll-behavior: smooth;
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    font-family: 'Work Sans', sans-serif;
+    font-size: 1rem;
+    background-color: #F8F8FF;
+    margin: 0;
+    padding: 0;
+}
+
+#main-container-login{
+    font-family: 'Work Sans', sans-serif;
+    font-size: 1rem;
+}
+
+
+:root {
+    --primary: #4978F0;
+    --primary-light: #E1EEF5;
+    --secondary: #1D1D1D;
+    --background: #F4F1FF;
+    --text: #1F2346;
+    --table-background: #FFFFFF;
+    --backgroundInscribir: #EBECF0;
+    --gray: #A0A7B1;
+    --odd-row: #f6f9ff;
+    --gray-background: #EDEEF1;
+    --gray-mid: #F1F2F6;
+}
+
+body {
+    font-size: 1rem;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Mulish, sans-serif;
+}
+
+li{
+    list-style: none;
+}
+
+
+table td{
+    border: 1px solid black;
+}
+
+.mensajeMiniModal{
+    display: none;
+    position: fixed;
+    top: 90%;
+    left: 47%;
+    font-weight: 600;
+    height: 2.5rem;
+    width: 165px;
+    border-radius: 0.5rem;
+    box-shadow: 0 4px 10px rgba(0,0,0,.15);
+    background-color: var(--primary);
+    color: white;
+    letter-spacing: .025em;
+    outline: none;
+    opacity: 0;
+    transition-duration: 1s;
+    z-index: 120;
+}
+
+.botonAzul {
+    background-color: var(--primary);
+    color: white;
+    white-space: nowrap;
+    border: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    outline: none;
+    letter-spacing: .025em;
+    text-decoration: none;
+    cursor: pointer;
+    font-weight: 600;
+    height: 2.5rem;
+    width: 160px;
+    border-radius: 0.5rem;
+    box-shadow: 0 4px 10px rgba(0,0,0,.15);
+  }
+
+.botonAzulFlecha{
+
+    background-color: var(--primary);
+    color: white;
+    white-space: nowrap;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    outline: none;
+    letter-spacing: .025em;
+    text-decoration: none;
+    cursor: pointer;
+    font-weight: 600;
+    width: fit-content;
+    height: 1.585rem;
+    box-shadow: 0 4px 10px rgba(0,0,0,.15);
+
+}
+
+.botonesListaModalProsecucion{
+
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 1rem;
+    margin-top: 1rem;
+
+}
+
+#botonAtrasListaProsecucion{
+
+    width: 2rem;
+
+}
+
+#botonSiguienteListaProsecucion{
+
+    width: 2rem;
+
+}
+
+.flechaArriba{
+
+    border-top-right-radius: 0.5rem;
+
+}
+
+.flechaAbajo{
+
+    border-bottom-right-radius: 0.5rem;
+
+}
+
+  .botonAzulConMargin {
+    background-color: var(--primary);
+    margin-left: 25px;
+    color: white;
+    white-space: nowrap;
+    border: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 1rem;
+    outline: none;
+    letter-spacing: .025em;
+    text-decoration: none;
+    cursor: pointer;
+    font-weight: 600;
+    min-height: 3.125rem;
+    width: 160px;
+    border-radius: 0.5rem;
+    box-shadow: 0 4px 10px rgba(0,0,0,.15);
+    transition: all .3s ease;
+    -webkit-transition: all .3s ease;
+  }
+
+  .botonRojo {
+    background-color: #F53844;
+    color: white;
+    white-space: nowrap;
+    border: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    outline: none;
+    letter-spacing: .025em;
+    text-decoration: none;
+    cursor: pointer;
+    font-weight: 600;
+    height: 2.5rem;
+    width: 160px;
+    border-radius: 0.5rem;
+    box-shadow: 0 4px 10px rgba(0,0,0,.15);
+  }
+
+
+  #BuscarEstudiantesRetirar{
+    width: 100px;
+  }
+
+  .botonAtras {
+    background-color: var(--primary);
+    color: white;
+    white-space: nowrap;
+    border: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    outline: none;
+    letter-spacing: .025em;
+    text-decoration: none;
+    cursor: pointer;
+    font-weight: 600;
+    min-height: 3.125rem;
+    width: 100px;
+    padding: 15px;
+    border-radius: 0.5rem;
+    box-shadow: 0 4px 10px rgba(0,0,0,.15);
+    margin: 1vh 0 2vh 2vw;
+  }
+
+  .botonAtrasImg{
+    height: 15px;
+    width: 18px;
+  }
+
+
+.botonVerdeSeleccionarDosOpciones{
+    background-color: #3aa856;
+    color: white;
+    white-space: nowrap;
+    border: none;
+    display: flex;
+    margin-top: .8rem;
+    margin-right: .5rem;
+    justify-content: center;
+    align-items: center;
+    outline: none;
+    letter-spacing: .025em;
+    text-decoration: none;
+    cursor: pointer;
+    font-weight: 600;
+    min-height: 2.5rem;
+    width: 160px;
+    border-radius: 0.5rem;
+    box-shadow: 0 4px 10px rgba(0,0,0,.15);
+    transition: all .3s ease;
+    -webkit-transition: all .3s ease; 
+}
+
+.botonRojoSeleccionarDosOpciones{
+    background-color: #F53844;
+    color: white;
+    white-space: nowrap;
+    border: none;
+    display: flex;
+    justify-content: center;
+    margin-top: .8rem;
+    margin-left: .5rem;
+    align-items: center;
+    outline: none;
+    letter-spacing: .025em;
+    text-decoration: none;
+    cursor: pointer;
+    font-weight: 600;
+    min-height: 2.5rem;
+    width: 160px;
+    border-radius: 0.5rem;
+    box-shadow: 0 4px 10px rgba(0,0,0,.15);
+    transition: all .3s ease;
+    -webkit-transition: all .3s ease; 
+}
+
+
+.botonVerde {
+    background-color: #3aa856;
+    margin-left: 25px;
+    color: white;
+    white-space: nowrap;
+    border: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 1rem;
+    outline: none;
+    letter-spacing: .025em;
+    text-decoration: none;
+    cursor: pointer;
+    font-weight: 600;
+    min-height: 3.125rem;
+    width: 160px;
+    border-radius: 0.5rem;
+    box-shadow: 0 4px 10px rgba(0,0,0,.15);
+    transition: all .3s ease;
+    -webkit-transition: all .3s ease;
+  }
+
+  #tabla-datos-estudiantes-inscribir select{
+    margin: 0 auto;
+  }
+
+  tfoot tr td{
+    border: none;
+  }
+
+  tbody tr{
+    border: 1px solid black;
+    text-align: center;
+  }
+
+  #botonesInscripcion{
+    display: flex;
+    flex-direction: row;
+    gap: 10%;
+  }
+
+  table{
+    margin: 0 auto;
+  }
+
+
+/* LOGIN */
+/* LOGIN */
+/* LOGIN */
+/* LOGIN */
+
+.login-wrapper {
+    position: relative;
+    display: grid;
+    grid-template-columns: 4fr 3fr;
+    margin: 0 auto;
+}
+
+
+.LadoLogin {
+    padding: 8.75rem 2rem 3rem 2rem;
+    display: flex;
+    justify-content: center;
+    align-items: start;
+}
+
+.formularioLoginWrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 2rem;
+    max-width: 28.75rem;
+    width: 100%;
+    padding: 3rem 2rem;
+    height: fit-content;
+    box-shadow: 
+        rgba(100, 100, 111, 0.2)
+        0rem 6px 26px 0rem;
+}
+
+.formularioLogin {
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    position: relative;
+    gap: 1rem;
+}
+
+.cajaFlechasArribaAbajo{
+
+    display: flex;
+    flex-direction: column;
+
+}
+
+.cajaFlechasArribaAbajoInscripcion{
+
+    display: flex;
+    flex-direction: column;
+    margin-left: -7px;
+
+
+}
+
+.BotonLogin {
+    background-color: var(--primary);
+    color: white;
+    white-space: nowrap;
+    border: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 1rem;
+    line-height: 3.125rem;
+    outline: none;
+    font-size: 1.125rem;
+    letter-spacing: .025em;
+    text-decoration: none;
+    cursor: pointer;
+    font-weight: 800;
+    min-height: 3.125rem;
+    width: 100%;
+    border-radius: 0.5rem;
+    box-shadow: 0 4px 10px rgba(0,0,0,.15);
+    transition: all .3s ease;
+    -webkit-transition: all .3s ease;
+}
+
+.formularioAcciones {
+    display: flex;
+    flex-direction: column;
+    color: var(--secondary);
+    gap: 1rem;
+    margin-top: 0.5rem;
+}
+
+.formularioAcciones a {
+    color: var(--secondary);
+    font-weight: 600;
+    text-decoration: none;
+}
+
+.formularioAcciones a:hover {
+    text-decoration: underline;
+}
+
+.formularioRow {
+    display: flex;
+    justify-content: space-between;
+}
+
+.flexJustifySpaceBetween{
+    display: flex;
+    justify-content: space-between;
+    padding-bottom: 2rem;
+}
+
+.flexJustifySpaceBetweenModalDetalles{
+    display: flex;
+    justify-content: space-between;
+}
+
+.campoDeTexto input {
+    color: var(--secondary);
+    font-size: 1rem;
+    font-weight: 500;
+    max-width: 100%;
+    width: 100%;
+    border: 1px solid var(--secondary);
+    height: 3.125rem;
+    letter-spacing: .03rem;
+    background-color: transparent;
+    outline: none;
+    transition: .25s;
+    border-radius: 0.5rem;
+    text-indent: 1.25rem;
+    margin-top: 0.5rem;
+}
+
+.campoDeTexto {
+    display: flex;
+    flex-direction: column;
+    width: 20rem;
+}
+
+.campoDeTexto img {
+    position: absolute;
+    right: -0.125rem;
+    bottom: -0.25rem;
+    width: 1.875rem;
+    height: 1.875rem;
+    transform: translate(-50%,-50%);
+    transform-origin: center;
+}
+
+.campoDeTexto input:focus {
+    border: 0.0625rem solid var(--primary);
+}
+
+.campoDeTexto label {
+    color: var(--secondary);
+    font-size: 0.875rem;
+    font-weight: 600;
+    letter-spacing: .03rem;
+    z-index: 10;
+}
+
+@media (max-width: 640px) {
+    .login-wrapper {
+        grid-template-columns: 1fr;
+        height: 100vh;
+    }
+}
+
+.imagen{
+    display: flex;
+    justify-content: center;
+    padding-top:20vh;
+    padding-bottom: 0;
+    margin-bottom: 0;
+}
+
+#logo{
+    width: 32vw;
+    height: 50vh;
+}
+
+input {
+    color: var(--secondary);
+    font-size: 1rem;
+    font-weight: 400;
+    max-width: 100%;
+    width: 15%;
+    border: 1px solid var(--secondary);
+    height: 3.125rem;
+    background-color: transparent;
+    outline: none;
+    transition: .25s;
+    text-indent: .25rem;
+    border-radius: 0.5rem;
+    margin-top: 0.5rem;
+}
+
+input:focus {
+    border: 0.0625rem solid var(--primary);
+}
+
+
+
+.contenedorInputBotonPegar{
+    color: var(--secondary);
+    font-size: 1rem;
+    font-weight: 400;
+    max-width: 100%;
+    width: 15%;
+    border: 1px solid var(--secondary);
+    height: 3.125rem;
+    background-color: transparent;
+    outline: none;
+    transition: .25s;
+    text-indent: .25rem;
+    border-radius: 0.5rem;
+    margin-top: 0.5rem;
+    padding: 0; 
+}
+
+.contenedorInputBotonPegar input{
+    color: var(--secondary);
+    font-size: 1rem;
+    font-weight: 400;
+    height: 100%;
+    width: 100%;
+    margin: 0;
+    margin-left: -1%;
+    background-color: transparent;
+    outline: none;
+    transition: .25s;
+    text-indent: .25rem;
+    border: none
+}
+
+.contenedorInputBotonPegar input:focus{
+    border: none
+}
+
+select {
+    color: var(--secondary);
+    font-size: 0.9rem;
+    font-weight: 50;
+    max-width: 100%;
+    width: 15%;
+    border: 1px solid var(--secondary);
+    height: 3.125rem;
+    letter-spacing: .03rem;
+    background-color: transparent;
+    outline: none;
+    transition: .25s;
+    border-radius: 0.5rem;
+    text-align: left;
+    text-indent: 3%;
+    margin-top: 0.5rem;
+}
+
+select:focus {
+    border: 0.0625rem solid var(--primary);
+}
+
+table select {
+    width: 100%;
+    text-indent: 0;
+}
+
+
+table input {
+    width: 90%;
+}
+
+
+
+#main-container-postLogin{
+    display: none;
+}
+
+/* POST LOGIN */
+/* POST LOGIN */
+/* POST LOGIN */
+/* POST LOGIN */
+
+.articles {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0 auto;
+    justify-content: center;
+    max-width: 1200px;
+    gap: 1.5rem;
+    margin-top: 8vh;
+}
+
+.articles article {
+    max-width: 20rem;
+    width: 100%;
+    cursor: pointer;
+    position: relative;
+    display: block;
+    transition: all 0.4s ease-in-out;
+    overflow: hidden;
+    border-radius: 1rem;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+}
+
+.articles article h2 {
+    margin: 0 0 0.5rem 0;
+    font-size: 1.6rem;
+    color: var(--text);
+    transition: color 0.3s ease-out;
+}
+
+
+.articles article img {
+    max-width: 100%;
+    transform-origin: center;
+    transition: transform 0.4s ease-in-out;
+    height: 75%;
+    overflow: hidden;
+    object-fit: cover;
+    margin-top: 10%;
+}
+
+.articles article:hover img {
+    transform: scale(1.5);
+}
+
+.article-preview {
+    padding: 1.5rem;
+    background: white;
+}
+
+.articles figure {
+    display: flex;
+    width: 100%;
+    height: 14rem;
+    overflow: hidden;
+    justify-content: center;
+}
+
+/* GESTION ESTUDIANTES */
+/* GESTION ESTUDIANTES */
+/* GESTION ESTUDIANTES */
+/* GESTION ESTUDIANTES */
+
+#BotonesGE{
+    margin-top: 20vh;
+    gap: 7.5rem;
+    margin-bottom: 15vh;
+}
+
+
+#main-container-GestionEstudiantes{
+    display:none;
+}
+
+.button-container-Gestion-Estudiantes{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding-left: 19vw;
+    padding-right: 19vw;
+}
+
+.Boton-GE{
+    background-color: gainsboro;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    border: 1px solid #000;
+    border-radius: 15px;
+    cursor: pointer;
+}
+
+.Boton-GE img{
+    width: 16.5vw;
+    height: 28vh;
+}
+
+.Boton-GE span{
+    display: flex;
+    justify-content: center;
+    text-align: center;
+}
+
+/* INSCRIBIR ESTUDIANTE */
+/* INSCRIBIR ESTUDIANTE */
+/* INSCRIBIR ESTUDIANTE */
+/* INSCRIBIR ESTUDIANTE */
+
+#contenedorAnnoEscolarInscripcion{
+
+    width: 90%;
+    display: flex;
+    justify-content: space-between;
+    border: 1px solid black;
+    border-radius: 9px;
+    margin-top: .5rem;
+
+}
+
+
+
+#AnnoEscolarNuevoIngreso{
+
+    margin: 0;
+    height: 3rem;
+    border: none;
+
+}
+
+#AnnoEscolarProsecucion{
+
+    border: none;
+    margin: 0;
+
+}
+
+#contenedorFlechasAnnoEscolarInscripcion{
+
+    width: fit-content;
+
+}
+
+.table-widget {
+    border-radius: 1rem;
+    background: var(--table-background);
+    padding: 1.5rem;
+    border: 2px solid var(--gray-background);
+    box-shadow: rgba(0, 0, 0, 0.05) 0px 6px 24px 0px,
+     rgba(0, 0, 0, 0.08) 0px 0px 0px 1px;
+    text-align: left;
+    overflow-x: auto;
+    overflow-y: auto;
+    width: 95%;
+    max-width: 100%;
+    margin: 0 auto;
+}
+
+.table-widget table {
+    max-width: fit-content;
+}
+
+
+.table-widget thead {
+    border-top: 2px solid var(--gray-background);
+}
+
+.table-widget tfoot {
+    margin-top: 1rem;
+    border-top: 2px solid var(--gray-background);
+}
+
+
+.table-widget tbody tr {
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+}
+
+.table-widget tbody tr:nth-child(odd) {
+    background: var(--odd-row);
+}
+
+.table-widget tbody tr:hover {
+    background: #e2ecff;
+}
+
+.table-row-count {
+    font-size: 0.8rem;
+    font-weight: 700;
+    background: var(--gray-mid);
+    padding: 0.5rem;
+    display: inline-flex;
+    align-items: center;
+    border-radius: 0.5rem;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+#mainContainerInscribirEstudiante{
+    display:none;
+}
+
+#cedula-estudiante{
+    display:none;
+}
+
+.atras{
+    width: 60px;
+    height: 50px;
+}
+
+#tabla-datos-estudiantes-inscribir{
+    margin: auto;
+    text-align: center;
+}
+
+#tabla-datos-estudiantes-inscribir td{
+    border: 1px solid black;
+    margin: 0;
+    padding: 10px;
+    border-collapse: collapse;
+}
+
+#Referencia-TransferenciaInscribir{
+    display: none;
+}
+
+#Referencia-ZelleInscribir{
+    display: none;
+}
+
+
+/* RETIRAR ESTUDIANTE */
+/* RETIRAR ESTUDIANTE */
+/* RETIRAR ESTUDIANTE */
+/* RETIRAR ESTUDIANTE */
+
+#zona-superior-Retirar{
+    display:none;
+}
+
+#main-container-RetirarEstudiante{
+    display:none;
+}
+
+#tabla-retirar-estudiante-encabezado{
+    margin: auto;
+    text-align: center;
+}
+
+#tabla-retirar-estudiante-encabezado td{
+    border: 1px solid black;
+    margin: 0;
+    padding: 10px;
+    border-collapse: collapse;
+}
+
+/* GESTION DE MENSUALIDADES */
+/* GESTION DE MENSUALIDADES */
+/* GESTION DE MENSUALIDADES */
+/* GESTION DE MENSUALIDADES */
+
+#zona-superior-GestionMensualidades{
+    display: none;
+}
+
+#main-container-GestionMensualidades{
+    display: none;
+}
+
+#tabla-consultar-estudiante-encabezado{
+    margin: auto;
+    text-align: center;
+}
+
+#tabla-consultar-estudiante-encabezado td{
+    border: 1px solid black;
+    margin: 0;
+    padding: 10px;
+    border-collapse: collapse;
+}
+
+#PagarTodosLosEstudiantes{
+    display: none;
+}
+
+/* CONSULTAR ESTUDIANTE */
+/* CONSULTAR ESTUDIANTE */
+/* CONSULTAR ESTUDIANTE */
+/* CONSULTAR ESTUDIANTE */
+
+#zona-superior-ConsultaEstudiante{
+    display: none;
+}
+
+#main-container-ConsultaEstudiante{
+    display: none;
+}
+
+#tabla-estudiante-consultado-encabezado{
+    margin: auto;
+    text-align: center;
+}
+
+#tabla-estudiante-consultado-encabezado td{
+    display: table-cell;
+    border: 1px solid black;
+    margin: 0;
+    padding: 10px;
+    border-collapse: collapse;
+}
+
+/* PAGAR ESTUDIANTE */
+/* PAGAR ESTUDIANTE */
+/* PAGAR ESTUDIANTE */
+/* PAGAR ESTUDIANTE */
+
+#zona-superior-PagarEstudiante{
+    display: none;
+}
+
+#main-container-PagarEstudiante{
+    display: none;
+}
+
+#tabla-estudiante-pagado-encabezado{
+    margin: auto;
+    text-align: center;
+}
+
+#tabla-estudiante-pagado-encabezado td{
+    border: 1px solid black;
+    margin: 0;
+    padding: 10px;
+}
+
+#tipo-de-pago-virtual{
+    display: none;
+}
+
+#Referencia-Transferencia{
+    display: none;
+}
+
+#Referencia-Zelle{
+    display: none;
+}
+
+/* PAGAR TODOS ESTUDIANTES */
+/* PAGAR TODOS ESTUDIANTES */
+/* PAGAR TODOS ESTUDIANTES */
+/* PAGAR TODOS ESTUDIANTES */
+
+
+#zona-superior-PagarEstudiantes{
+    display: none;
+}
+
+#main-container-PagarEstudiantes{
+    display: none;
+}
+
+#tabla-estudiantes-pagados-encabezado{
+    display: none;
+    margin: auto;
+    text-align: center;
+}
+
+#tabla-estudiantes-pagados-encabezado td{
+    border: 1px solid black;
+    margin: 0;
+    padding: 10px;
+    border-collapse: collapse;
+}
+
+/* LISTA DE DEUDORES */
+/* LISTA DE DEUDORES */
+/* LISTA DE DEUDORES */
+/* LISTA DE DEUDORES */
+
+#zona-superior-Lista-Deudores{
+    display: none;
+}
+
+#main-container-Lista-Deudores{
+    display: none;
+}
+
+#tabla-Lista-Deudores{
+    display: block;
+    margin: auto;
+    text-align: center;
+}
+
+#tabla-Lista-Deudores th{
+    border: 1px solid black;
+    margin: 0;
+    padding: 10px;
+    border-collapse: collapse;
+    text-align: center;
+}
+
+/* GESTION DE COSTOS */
+/* GESTION DE COSTOS */
+/* GESTION DE COSTOS */
+/* GESTION DE COSTOS */
+
+#zona-superior-GestionCostos{
+    display: none;
+}
+
+/* LISTA DE PAGOS */
+/* LISTA DE PAGOS */
+/* LISTA DE PAGOS */
+/* LISTA DE PAGOS */
+
+#zona-superior-PagosRecibidos{
+    display: none;
+}
+
+#main-container-PagosRecibidos{
+    display:none;
+}
+
+#PagosRecibidos{display: none;}
+
+#listaAtras{
+    visibility: hidden;
+}
+
+/* VERIFICAR TICKET */
+/* VERIFICAR TICKET */
+/* VERIFICAR TICKET */
+/* VERIFICAR TICKET */
+
+#zona-superior-VerificarTicket{
+    display: none;
+}
+
+#main-container-VerificarTicket{
+    display:none;
+}
+
+/* OCULTOS */
+/* OCULTOS */
+/* OCULTOS */
+/* OCULTOS */
+
+
+
+
+.formularioInscripcion{
+    display: flex;
+    flex-direction: row;
+    gap: 2em;
+    margin-left: 2em;
+    margin-bottom: .5em;
+    align-items: center;
+}
+
+.formularioInscripcion div{
+
+    margin-bottom: 0;
+
+}
+
+.formularioInscripcionInputConBoton{
+    display: flex;
+    flex-direction: row;
+    gap: 2em;
+    margin-bottom: .5em;
+    align-items: center;
+}
+
+.formularioInscripcionSinGap{
+
+    display: flex;
+    flex-direction: row;
+    gap: 0;
+    margin-bottom: .5em;
+    align-items: center;
+}
+
+
+table input{
+    width: 150px;
+    color: black;
+}
+
+input{
+    color: black;
+    font-style: normal;
+}
+
+.Seleccionar-Seccion{
+    width: 100px;
+}
+
+.Seleccionar-Curso{
+    width: 130px;
+}
+
+.Seleccionar-Grado{
+    width: 166px;
+}
+
+.iconoBotonModal{
+    margin-left: 1rem;
+    margin-bottom: 1rem;
+    width: 30px;
+    height: 30px;    
+}
+
+.iconoBotonModal:hover{
+    cursor: pointer;  
+}
+
+.icono{
+    width: 30px;
+    height: 30px;  
+}
+
+.iconoBoton{
+    width: 30px;
+    height: 30px;  
+}
+
+.iconoBoton:hover{
+    width: 30px;
+    height: 30px;
+    cursor: pointer;  
+}
+
+.iconoPequenno{
+    width: 22px;
+    height: 22px;  
+}
+
+.celdaEstudianteBotonBorrar{
+    border: 0;
+    background-color: #FFFFFF;
+}
+
+#mensajeFormulariosInscribir{
+    color: red;
+    gap: .50rem;
+    display: none;
+}
+
+
+#tablaRetirar{
+    display:none;
+}
+
+.imagenCentroVacio{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.imagenVacio{
+    width: 35%;
+    height: 35%;
+}
+
+#retirarEstudiantes{
+    float:right;
+    margin-top: 2em;
+    margin-right: 2em;
+    display: none;
+}
+
+#PagarTodosLosEstudiantes{
+    margin-left: 2em;
+    max-width: 100%;
+    width: 10%;
+}
+
+#BuscarEstudiantesConsultar{
+    width: 7%;
+}
+
+#consultarEstudiantes{
+    display: none;
+    margin-top: 1rem;
+}
+
+#tablaMostrar{
+    display: none;
+}
+
+.checkbox{
+    width: 20px;
+    height: 20px;
+}
+
+.formularioInscripcionCheckbox{
+    display: flex;
+    flex-direction: row;
+    gap: .40rem;
+    align-items: center;
+}
+
+.tablaColspan{
+    text-align: left;
+    text-indent: .50em;
+}
+
+#main-container-PagoInscripcionRealizado{
+    display: none;
+}
+
+#main-container-PagoMensualidadRealizado{
+    display: none;
+}
+
+#tablaticketVerificar td{
+    padding: .5rem;
+}
+
+#tablaticketVerificar{
+    border: 1px solid black;
+}
+
+#tablaTicket{
+    border: 1px solid black;
+}
+
+.tdSinBorde{
+    border: none;
+    padding: .25rem;
+}
+
+.sinBorde td{
+    border-style: none;
+    border: 0;
+}
+
+.tdConPadding{
+    padding: .40rem;
+}
+
+.tablaRecibo{
+    width: 40rem;
+    max-width: 100%;
+    margin: 0 auto;
+}
+
+.cajaPrecios{
+    width: 40rem;
+    max-width: 100%;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    flex-basis: 100%;
+}
+
+.cajaPrecios h3{
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+}
+
+.botonALaDerecha{
+    display: flex;
+    flex-direction: row-reverse;
+    margin-top: .4rem;
+}
+
+.formularioHorizontal{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: row;
+    padding: .5rem 0;
+    text-indent: 0;
+}
+
+.formularioHorizontal input{
+    margin: 0;
+    width: 8rem;
+}
+
+.verificacionTipoPago{
+    height: 2rem;
+    width: 2rem;
+}
+
+.botonAtrasLista {
+    background-color: var(--primary);
+    color: white;
+    white-space: nowrap;
+    border: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    outline: none;
+    letter-spacing: .025em;
+    text-decoration: none;
+    cursor: pointer;
+    font-weight: 600;
+    min-height: 3.125rem;
+    width: 100px;
+    padding: 15px;
+    border-radius: 0.5rem;
+    box-shadow: 0 4px 10px rgba(0,0,0,.15);
+    margin: 1vh 0 2vh 2vw;
+  }
+
+.botonSiguienteLista {
+    background-color: var(--primary);
+    color: white;
+    white-space: nowrap;
+    border: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    outline: none;
+    letter-spacing: .025em;
+    text-decoration: none;
+    cursor: pointer;
+    font-weight: 600;
+    min-height: 3.125rem;
+    width: 100px;
+    padding: 15px;
+    border-radius: 0.5rem;
+    box-shadow: 0 4px 10px rgba(0,0,0,.15);
+    margin: 1vh 2vw 2vh 0;
+  }
+
+  .botonSiguienteListaInscribir{
+    background-color: var(--primary);
+    color: white;
+    white-space: nowrap;
+    border: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    outline: none;
+    letter-spacing: .025em;
+    text-decoration: none;
+    cursor: pointer;
+    font-weight: 600;
+    min-height: 3.125rem;
+    width: 100px;
+    padding: 15px;
+    border-radius: 0.5rem;
+    box-shadow: 0 4px 10px rgba(0,0,0,.15);
+    margin: 1vh 2vw 2vh 0;
+  }
+
+.botonSiguienteImg{
+    height: 15px;
+    width: 18px;
+    transform: rotate(180deg);
+  }
+
+.botonesListaPagos{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    width: 100%;
+    gap: 1.8rem;
+}
+
+#PDF{
+    display: none;
+}
+
+#cajaTablaDeudores{
+    display: none;
+}
+
+.cursoListaDeudores{
+    border: none;
+    padding-bottom: 0.4rem;
+    text-align: center;
+}
+
+.botonesListaPagos p{
+    margin-top: 0.5rem;
+    margin-bottom: 0.5rem;
+}
+
+
+.botonesListaPagosAdministrativo p{
+    margin-top: 0.5rem;
+    margin-bottom: 0.5rem;
+}
+
+.botonesListaPagosAdministrativo{
+    margin: 0 auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    width: 65%;
+    gap: 1.8rem;
+
+}
+
+.contenedorAdministrativo p{
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+}
+
+.contenedorAdministrativo{
+    border-radius: 1rem;
+    background: var(--table-background);
+    padding: 1.5rem;
+    border: 2px solid var(--gray-background);
+    box-shadow: rgba(0, 0, 0, 0.05) 0px 6px 24px 0px,
+     rgba(0, 0, 0, 0.08) 0px 0px 0px 1px;
+    text-align: left;
+    overflow-x: auto;
+    width: 40%;
+    max-width: 100%;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+}
+
+#tablaReciboVerificar{
+    display: none;
+}
+
+#mensajeRepresentanteNoExisteInscribir{
+    display: none;
+    color: red;
+}
+
+#mes-en-cursoRetirar{
+    display: none;
+}
+
+#mes-en-curso{
+    display: none;
+}
+
+.curso-preescolar, .curso-primaria, .curso-bachillerato{
+    display: none;
+}
+
+.cerrarSesion{
+    display: flex;
+    align-items: center;
+    flex-direction: row-reverse;
+    padding: 1rem;
+}
+
+#main-container-PagosAdministrativos{
+    display: none;
+}
+
+#tabla-datosPagosAdministrativos{
+    margin: auto;
+    text-align: center;
+}
+
+#tabla-datosPagosAdministrativos td{
+    border: 1px solid black;
+    margin: 0;
+    padding: 10px;
+    border-collapse: collapse;
+}
+
+#tablaDatosPagosPendientesAdministrativos{
+    margin: auto;
+    text-align: center;
+}
+
+#tablaDatosPagosPendientesAdministrativos td{
+    border: 1px solid black;
+    margin: 0;
+    padding: 10px;
+    border-collapse: collapse;
+}
+
+#main-container-PagoAdministrativoRealizado{
+    display: none;
+}
+
+.tablaDeudores{
+    display: block;
+    margin: auto;
+    text-align: center;
+}
+
+.tablaDeudores th{
+    border: 1px solid black;
+    margin: 0;
+    padding: 10px;
+    border-collapse: collapse;
+    text-align: center;
+}
+
+
+.tablaBonita{
+    margin: 0 auto;
+    text-align: center;
+}
+
+.tablaBonita td{
+    border: 1px solid black;
+    margin: 0;
+    padding: 10px;
+    border-collapse: collapse;
+    text-align: center;
+}
+
+.tablaBonita th{
+    border: 1px solid black;
+    margin: 0;
+    padding: 10px;
+    border-collapse: collapse;
+    text-align: center;
+}
+
+.tablaBonita .tdSinBorde{
+    border-style: none;
+    border: 0;
+}
+
+#tabla-Lista-Deudores th, #tabla-Lista-Deudores td{
+    font-size: 11px;
+}
+
+.tablaDeudores th, .tablaDeudores td{
+    font-size: 11px;
+}
+
+#main-container-CierreCaja{
+    display: none;
+}
+
+#tablaListaPagosCierre th{
+    border: 1px solid black;
+}
+
+#tablaListaPagosCierre{
+    font-size: 16px;
+}
+
+#containerTablasCierre{
+    display: none;
+}
+
+.contenedoresMontoPago{
+    display: flex;
+    flex-direction: column;
+    display: none;
+}
+
+.contenedoresMontoPago span{
+    font-size: 10px;
+}
+
+.contenedoresMontoPago input{
+        color: var(--secondary);
+        font-size: 1rem;
+        font-weight: 400;
+        max-width: 100%;
+        width: 10rem;
+        border: 1px solid var(--secondary);
+        height: 3.125rem;
+        background-color: transparent;
+        outline: none;
+        transition: .25s;
+        text-indent: .25rem;
+        border-radius: 0.5rem;
+        margin-top: 0.5rem;
+}
+
+#mensajeFormulariosLogin{
+    color: red;
+}
+
+.referencia{
+    margin-bottom: 0.5rem;
+}
+
+#mensajeErrorInternetInscribir{
+    display: none;
+    color: red;
+}
+
+.pantallaError{
+    margin: 0 auto;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+    border-radius: 1rem;
+    background: var(--table-background);
+    padding: 1.5rem;
+    border: 2px solid var(--gray-background);
+    color: red;
+    display: flex;
+    flex-direction: column;
+    z-index: 99;
+    position: fixed;
+    top: 25%;
+    right: 0;
+    left: 0;
+    margin: 0 auto;
+    text-align: center;
+    width: 30rem;
+    height: 19rem;
+}
+
+.pantallaError img{
+    width: 10rem;
+    height: 10rem;
+    margin: 0 auto;
+    padding-bottom: 1rem;
+}
+
+.pantallaExito{
+    margin: 0 auto;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+    border-radius: 1rem;
+    background: var(--table-background);
+    padding: 1.5rem;
+    border: 2px solid var(--gray-background);
+    color: green;
+    display: flex;
+    flex-direction: column;
+    z-index: 110;
+    position: fixed;
+    top: 25%;
+    right: 0;
+    left: 0;
+    margin: 0 auto;
+    width: 30rem;
+    height: 19rem;
+}
+
+.pantallaExito img{
+    width: 10rem;
+    height: 10rem;
+    margin: 0 auto;
+    padding-bottom: 1rem;
+}
+
+#PantallaExitoFondo{
+    z-index: 110;
+}
+
+#PantallaErrorFondo{
+    z-index: 110;
+}
+
+#PantallaCargaFondo{
+    z-index: 110;
+}
+
+.pantallaCarga{
+    margin: 0 auto;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+    border-radius: 1rem;
+    background: var(--table-background);
+    padding: 1.5rem;
+    border: 2px solid var(--gray-background);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    z-index: 99;
+    position: fixed;
+    top: 25%;
+    right: 0;
+    left: 0;
+    margin: 0 auto;
+    width: 30rem;
+    height: 17rem;
+    text-align: center;
+}
+
+.pantallaPreguntaImprimir{
+    margin: 0 auto;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+    border-radius: 1rem;
+    background: var(--table-background);
+    padding: 1.5rem;
+    border: 2px solid var(--gray-background);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    z-index: 99;
+    position: fixed;
+    top: 25%;
+    right: 0;
+    left: 0;
+    margin: 0 auto;
+    width: 30rem;
+    height: 19.5rem;
+    text-align: center;
+}
+
+.pantallaPreguntaImprimirConvenioPares{
+    margin: 0 auto;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+    border-radius: 1rem;
+    background: var(--table-background);
+    padding: 1.5rem;
+    border: 2px solid var(--gray-background);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    z-index: 99;
+    position: fixed;
+    top: 14%;
+    right: 0;
+    left: 0;
+    margin: 0 auto;
+    width: 30rem;
+    height: 29.5rem;
+    text-align: center;
+}
+
+.pantallaPreguntaImprimirConvenioPares img{
+    width: 10rem;
+    height: 10rem;
+    margin: 0 auto;
+    padding-bottom: 1rem;
+}
+
+.pantallaPreguntaImprimirConvenioIndividual{
+    margin: 0 auto;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+    border-radius: 1rem;
+    background: var(--table-background);
+    padding: 1.5rem;
+    border: 2px solid var(--gray-background);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    z-index: 99;
+    position: fixed;
+    top: 17%;
+    right: 0;
+    left: 0;
+    margin: 0 auto;
+    width: 30rem;
+    height: 24rem;
+    text-align: center;
+}
+
+.pantallaPreguntaImprimirConvenioIndividual img{
+    width: 10rem;
+    height: 10rem;
+    margin: 0 auto;
+    padding-bottom: 1rem;
+}
+
+.pantallaPreguntaImprimir img{
+    width: 10rem;
+    height: 10rem;
+    margin: 0 auto;
+    padding-bottom: 1rem;
+}
+
+.pantallaPreguntaImprimirPreinscribir{
+    margin: 0 auto;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+    border-radius: 1rem;
+    background: var(--table-background);
+    padding: 1.5rem;
+    border: 2px solid var(--gray-background);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    z-index: 99;
+    position: fixed;
+    top: 17%;
+    right: 0;
+    left: 0;
+    margin: 0 auto;
+    width: 30rem;
+    height: fit-content;
+    text-align: center;
+}
+
+.pantallaPreguntaImprimirPreinscribir div{
+
+    padding-bottom: 0;
+
+}
+
+.pantallaPreguntaImprimirPreinscribir img{
+    width: 10rem;
+    height: 10rem;
+    margin: 0 auto;
+    padding-bottom: 1rem;
+}
+
+.pantallaDetallesPagos{
+    margin: 0 auto;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+    border-radius: 1rem;
+    background: var(--table-background);
+    padding: 1.5rem;
+    border: 2px solid var(--gray-background);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    z-index: 99;
+    position: fixed;
+    top: 2%;
+    right: 0;
+    left: 0;
+    margin: 0 auto;
+    width: 500px;
+    height: 760px;
+    overflow: auto;
+}
+
+.pantallaDatosRepreAbonoNoRegistrado{
+    margin: 0 auto;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+    border-radius: 1rem;
+    background: var(--table-background);
+    padding: 1.5rem;
+    border: 2px solid var(--gray-background);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    z-index: 99;
+    position: fixed;
+    top: 13%;
+    right: 0;
+    left: 0;
+    margin: 0 auto;
+    width: 500px;
+    height: 300px;
+}
+
+.pantallaDatosRepreCuestionarioInscripcion{
+    margin: 0 auto;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+    border-radius: 1rem;
+    background: var(--table-background);
+    padding: 1.5rem;
+    border: 2px solid var(--gray-background);
+    display: flex;
+    flex-direction: column;
+    z-index: 99;
+    top: 13%;
+    right: 0;
+    left: 0;
+    margin: 0 auto;
+    width: 500px;
+    height: fit-content;
+}
+
+#cuestionarioAbonoNoRegistrado{
+    display: none;
+}
+
+.contenedorInputAnnoEscolarTablas{
+
+    color: var(--secondary);
+    font-size: 1rem;
+    font-weight: 400;
+    border: 1px solid var(--secondary);
+    height: 3.125rem;
+    background-color: transparent;
+    outline: none;
+    transition: .25s;
+    text-indent: .25rem;
+    border-radius: 0.5rem;
+    margin-top: 0.5rem;
+    padding: 0; 
+
+}
+
+.pantallaDetallesPagos tbody tr{
+    text-align: left;
+}
+
+
+.pantallaConfirmarEditarAbonos{
+    margin: 0 auto;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+    border-radius: 1rem;
+    background: var(--table-background);
+    padding: 1.5rem;
+    border: 2px solid var(--gray-background);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    z-index: 99;
+    position: fixed;
+    top: 21%;
+    right: 0;
+    left: 0;
+    margin: 0 auto;
+    width: 30rem;
+    height: 21rem;
+}
+
+.pantallaConfirmarEditarAbonos tbody tr{
+    text-align: left;
+}
+
+.pantallaConfirmarEditarAbonos img{
+    width: 10rem;
+    height: 10rem;
+    margin: 0 auto;
+    padding-bottom: 1rem;
+}
+
+.pantallaPreguntaConfirmarPagar{
+    margin: 0 auto;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+    border-radius: 1rem;
+    background: var(--table-background);
+    padding: 1.5rem;
+    border: 2px solid var(--gray-background);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    z-index: 99;
+    position: fixed;
+    top: 25%;
+    right: 0;
+    left: 0;
+    margin: 0 auto;
+    width: 30rem;
+    height: 22.5rem;
+}
+
+.pantallaPreguntaConfirmarPagar tbody tr{
+    text-align: left;
+}
+
+.pantallaPreguntaConfirmarPagar img{
+    width: 10rem;
+    height: 10rem;
+    margin: 0 auto;
+    padding-bottom: 1rem;
+}
+
+.pantallaCarga img{
+    width: 10rem;
+    height: 10rem;
+    margin: 0 auto;
+    padding-bottom: 1rem;
+}
+
+.textoCentrado{
+    text-align: center;
+}
+
+.pantallaDatosAbono{
+    margin: 0 auto;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+    border-radius: 1rem;
+    background: var(--table-background);
+    padding: 1.5rem;
+    border: 2px solid var(--gray-background);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    z-index: 99;
+    position: fixed;
+    top: 8%;
+    right: 0;
+    left: 0;
+    margin: 0 auto;
+    width: 40vw;
+    max-height: 80vh;
+}
+.pantallaPago{
+    margin: 0 auto;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+    border-radius: 1rem;
+    background: var(--table-background);
+    padding: 1.5rem;
+    border: 2px solid var(--gray-background);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    z-index: 99;
+    position: fixed;
+    top: 8%;
+    right: 0;
+    left: 0;
+    margin: 0 auto;
+    width: 75vw;
+    max-height: 80vh;
+}
+
+.pantallaReporte{
+    margin: 0 auto;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+    border-radius: 1rem;
+    background: var(--table-background);
+    padding: 1.5rem;
+    border: 2px solid var(--gray-background);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    z-index: 99;
+    position: fixed;
+    top: 8%;
+    right: 0;
+    left: 0;
+    margin: 0 auto;
+    width: 57vw;
+    max-height: 80vh;
+}
+
+.pantallaProsecucion{
+    margin: 0 auto;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+    border-radius: 1rem;
+    background: var(--table-background);
+    padding-left: 1.5rem;
+    padding-right: 1.5rem;
+    padding-bottom: 1.5rem;
+    padding-top: 0;
+    display: flex;
+    flex-direction: column;
+    border: 2px solid var(--gray-background);
+    z-index: 99;
+    right: 0;
+    left: 0;
+    margin: 0 auto;
+    width: 75vw;
+    max-height: fit-content;
+    margin-bottom: .8rem;
+}
+
+#cambiarTipoConversion{
+    margin-left: 33%;
+    margin-top: 3%;
+    width: 7rem;
+}
+
+.pantallaPago img{
+    width: 10rem;
+    height: 10rem;
+    margin: 0 auto;
+    padding-bottom: 1rem;
+}
+
+
+
+.Modal{
+    width: 100vw;
+    height: 100vh;
+    background-color: rgb(0, 0, 0, 0.6);
+    position: fixed;
+    display: none;
+    top: 0;
+    left: 0;
+    z-index: 98;
+}
+
+.centrado{
+    display: flex;
+    flex-direction: row;
+    gap: .03rem;
+    justify-content: space-evenly;
+    margin-left: .5rem;
+    margin-right: .5rem;
+}
+
+.centrado div{
+    width: 48%;
+}
+
+.centrado input{
+    width: 90%;
+    max-width: 100%;
+}
+
+.centrado label{
+    width: 90%;
+    max-width: 100%;
+}
+
+.centrado select{
+    width: 90%;
+    max-width: 100%;
+}
+
+.centradoNoFlex{
+    margin: 0 auto;
+    text-align: center;
+    padding-bottom: 1rem;
+    padding-top: 1rem;
+    font-size: 25px;
+}
+
+.centradoNoFlex h1{
+    font-size: 15px;
+}
+
+.contenedorInscripcion{
+    border-radius: 1rem;
+    background: var(--table-background);
+    padding: 1.5rem;
+    border: 2px solid var(--gray-background);
+    box-shadow: rgba(0, 0, 0, 0.05) 0px 6px 24px 0px,
+     rgba(0, 0, 0, 0.08) 0px 0px 0px 1px;
+    text-align: left;
+    overflow-x: auto;
+    width: 60%;
+    max-width: 100%;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+}
+
+.cajaContenedorCedulaListaSeccion{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+
+.cajaFormularioInscripcion{
+    display: flex;
+    flex-direction: row;
+}
+
+.subcajaFormularioInscripcion{
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+}
+
+.subcajaFormularioInscripcionDerecha{
+    display: flex;
+    flex-direction: column;
+    width: 85%;
+    align-items: start;
+}
+
+.subcajaFormularioAdministrativo{
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+}
+
+.subcajaFormularioAdministrativoDerecha{
+    display: flex;
+    flex-direction: column;
+    width: 85%;
+    align-items: start;
+}
+
+.subcajaFormularioAdministrativo label{
+    height: 3.5rem;
+    margin-left: 1.3rem;
+    margin-right: 1.3rem;
+    margin-top: .5rem;
+    padding: 0;
+    display: flex;
+    align-items: center;
+}
+
+
+.subcajaFormularioAdministrativoDerecha input{
+    width: 90%;
+    height: 3.5rem;
+    padding: 0;
+}
+
+.subcajaFormularioAdministrativoDerecha div{
+    width: 90%;
+    padding: 0;
+}
+
+.subcajaFormularioAdministrativoDerecha div div{
+    width: auto;
+    padding: 0;
+}
+
+
+.subcajaFormularioAdministrativoDerecha select{
+    width: 90%;
+    max-width: 100%;
+    height: 3.5rem;
+    padding: 0;
+}
+
+.h2TablaDatosError{
+
+    color:darkred;
+    margin-bottom: 1rem;
+
+}
+
+
+.subcajaFormularioInscripcion label{
+    height: 3.5rem;
+    margin-left: 1.3rem;
+    margin-right: 1.3rem;
+    margin-top: .5rem;
+    padding: 0;
+    display: flex;
+    align-items: center;
+}
+
+
+.subcajaFormularioInscripcionDerecha input{
+    width: 90%;
+    height: 3.5rem;
+    padding: 0;
+}
+
+.subcajaFormularioInscripcionDerecha div{
+    width: 90%;
+    padding: 0;
+}
+
+.subcajaFormularioInscripcionDerecha div div{
+    width: auto;
+    padding: 0;
+}
+
+
+.subcajaFormularioInscripcionDerecha select{
+    width: 90%;
+    max-width: 100%;
+    height: 3.5rem;
+    padding: 0;
+}
+
+.subcajaFormularioRepresentanteDerecha{
+    display: flex;
+    flex-direction: column;
+    width: 85%;
+    align-items: start;
+}
+
+.subcajaFormularioRepresentanteDerecha input{
+    width: 90%;
+    height: 3.5rem;
+    padding: 0;
+}
+
+.subcajaFormularioRepresentanteDerecha div{
+    width: 90%;
+    padding: 0;
+}
+
+.subcajaFormularioRepresentanteDerecha div div{
+    width: auto;
+    padding: 0;
+}
+
+
+.subcajaFormularioRepresentanteDerecha select{
+    width: 90%;
+    max-width: 100%;
+    height: 3.5rem;
+    padding: 0;
+}
+
+
+
+.subcajaFormularioPreinscripcion label{
+    height: 3.5rem;
+    margin-left: 1.3rem;
+    margin-right: 1.3rem;
+    margin-top: .5rem;
+    padding: 0;
+    display: flex;
+    align-items: center;
+}
+
+.subcajaFormularioPreinscripcion{
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+}
+
+.subcajaFormularioPreinscripcionDerecha{
+    display: flex;
+    flex-direction: column;
+    width: 85%;
+    align-items: start;
+}
+
+.subcajaFormularioPreinscripcionDerecha label{
+    height: 3.5rem;
+    margin-left: 1.3rem;
+    margin-right: 1.3rem;
+    margin-top: .5rem;
+    padding: 0;
+    display: flex;
+    align-items: center;
+}
+.subcajaFormularioPreinscripcionDerecha input{
+    width: 90%;
+    height: 3.5rem;
+    padding: 0;
+}
+.subcajaFormularioPreinscripcionDerecha select{
+    width: 90%;
+    max-width: 100%;
+    height: 3.5rem;
+    padding: 0;
+}
+
+
+.subcajaFormularioAgregarDerecha{
+    display: flex;
+    flex-direction: column;
+    width: 85%;
+    align-items: start;
+}
+
+.subcajaFormularioAgregarDerecha label{
+    height: 3.5rem;
+    margin-left: 1.3rem;
+    margin-right: 1.3rem;
+    margin-top: .5rem;
+    padding: 0;
+    display: flex;
+    align-items: center;
+}
+.subcajaFormularioAgregarDerecha input{
+    width: 90%;
+    height: 3.5rem;
+    padding: 0;
+}
+.subcajaFormularioAgregarDerecha select{
+    width: 90%;
+    max-width: 100%;
+    height: 3.5rem;
+    padding: 0;
+}
+
+.subcajaFormularioReinscripcionDerecha{
+    display: flex;
+    flex-direction: column;
+    width: 85%;
+    align-items: start;
+}
+
+.subcajaFormularioReinscripcionDerecha label{
+    height: 3.5rem;
+    margin-left: 1.3rem;
+    margin-right: 1.3rem;
+    margin-top: .5rem;
+    padding: 0;
+    display: flex;
+    align-items: center;
+}
+.subcajaFormularioReinscripcionDerecha input{
+    width: 90%;
+    height: 3.5rem;
+    padding: 0;
+}
+.subcajaFormularioReinscripcionDerecha select{
+    width: 90%;
+    max-width: 100%;
+    height: 3.5rem;
+    padding: 0;
+}
+
+.subcajaFormularioActualizarDerecha{
+    display: flex;
+    flex-direction: column;
+    width: 85%;
+    align-items: start;
+}
+
+.subcajaFormularioActualizarDerecha label{
+    height: 3.5rem;
+    margin-left: 1.3rem;
+    margin-right: 1.3rem;
+    margin-top: .5rem;
+    padding: 0;
+    display: flex;
+    align-items: center;
+}
+.subcajaFormularioActualizarDerecha input{
+    width: 90%;
+    height: 3.5rem;
+    padding: 0;
+}
+.subcajaFormularioActualizarDerecha select{
+    width: 90%;
+    max-width: 100%;
+    height: 3.5rem;
+    padding: 0;
+}
+
+#tablaListaPagosRepresentante th{
+    border: 1px black solid;
+}
+
+
+.inputfull input{
+    width: 100%;
+}
+
+#inscribirAtras{
+    visibility: hidden;
+}
+#inscribirAgregar{
+    display: none;
+}
+
+.hidden{
+    visibility: hidden;
+}
+
+.contenedorInscripcion p{
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+}
+
+.tablaDatos{
+    margin: auto;
+    text-align: center;
+}
+
+.tablaDatos td{
+    border: 1px solid black;
+    margin: 0;
+    padding: 10px;
+    border-collapse: collapse;
+}
+
+
+.marginTop3rem{
+    margin-top: 3rem;
+}
+
+.marginTop7rem{
+    margin-top: 4.2rem;
+}
+
+.marginBottom7rem{
+    margin-bottom: 5rem;
+}
+
+.marginBottom3rem{
+    margin-bottom: 3rem;
+}
+
+.marginRight2rem{
+    margin-right: 2rem;
+}
+
+.marginTop09rem{
+    margin-top: .9rem;
+}
+
+.width40rem{
+    width: 40rem;
+}
+
+.centrado{
+    margin: 0 auto;
+}
+
+.sinBorders{
+    border: none;
+}
+
+.hidden{
+    visibility: hidden;
+}
+
+.oculto{
+    display:none;
+}
+
+tbody tr td{
+    border: none;
+}
+
+#debugWindow{
+
+    position:absolute;
+    z-index: 300;
+    top: 89%;
+    left: 0.5%;
+    max-width: fit-content;
+    max-height: fit-content;
+
+}
+
+.formularioConBotonNuevaInscripicion{
+
+    display: flex;
+    flex-direction: row;
+    margin-bottom: .5em;
+    align-items: center;
+
+}
+
+.iconoPegarNuevaInscripcion{
+
+    width: 30px;
+    height: 30px;
+    margin-top: 6px;
+    margin-left: -30px;
+
+}
+
+.iconoPegarNuevaInscripcion:hover{
+
+    cursor: pointer;
+
+}
+
+.table-widget table .coloresFondoDesactivadosTabla tr:nth-child(odd){
+
+    background:none
+
+}
+
+.table-widget table .coloresFondoDesactivadosTabla tr:hover{
+
+    background:none
+
+}
+
+.table-widget table .coloresFondoDesactivadosTabla:hover{
+
+    cursor: default;
+
+}
+
+.noGap{
+
+    gap: 0;
+
+}
